@@ -1,1 +1,28 @@
-
+body{
+	background-image: linear-gradient(to right, rgb(1, 147, 230), rgb(0, 209, 84), rgb(1, 147, 230));
+	font-family: 'Montserrat';
+	color:white;
+	text-align: center;
+}
+#title{
+	font-size:110px;
+}
+#explore-btn{
+    background-color:rgba(255, 255, 255, 0.7);
+    color:black;
+    font-size:50px;
+    display:block;
+    position:absolute;
+    left:48%;
+    top:70%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    transition:0.5s;
+}
+#explore-btn:hover{
+	color:rgb(1, 147, 230);
+}
+a{
+	text-decoration: none;
+}
