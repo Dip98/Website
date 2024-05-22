@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
 	background-image: linear-gradient(to right, rgb(1, 147, 230), rgb(0, 209, 84), rgb(1, 147, 230));
 	font-family: 'Montserrat';
@@ -25,4 +28,32 @@ body{
 }
 a{
 	text-decoration: none;
+}
+.info-box{
+    background-color: rgb(180, 180, 180);
+    border-radius: 20px;
+    color: black;
+    position:relative;
+    padding: 5px;
+    width:90%;
+    height:300px;
+    left:5%;
+}
+#stat-box{
+    top:500px;
+}
+#stat-box h1{
+    font-size:50px;
+}
+#code-symbol{
+    position: absolute;
+    left:15%;
+}
+#game-symbol{
+    position: absolute;
+    left:81.5%;
+}
+#language-symbol{
+    position: absolute;
+    left:46.5%;
 }
