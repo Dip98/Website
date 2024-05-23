@@ -30,30 +30,82 @@ a{
 	text-decoration: none;
 }
 .info-box{
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(220, 220, 220);
     border-radius: 20px;
     color: black;
     position:relative;
     padding: 5px;
+    margin: 5px;
     width:90%;
     height:300px;
     left:5%;
 }
+.info-box a{
+    color:black;
+    text-decoration: underline;
+}
 #stat-box{
     top:500px;
+    height:320px;
 }
 #stat-box h1{
     font-size:50px;
 }
-#code-symbol{
-    position: absolute;
-    left:15%;
+#glitch-box{
+    top:600px;
+    height:320px;
 }
-#game-symbol{
+#glitch-box h1{
+    position:relative;
+    font-size:50px;
+}
+#year-symbol{
     position: absolute;
     left:81.5%;
 }
-#language-symbol{
+#game-symbol{
     position: absolute;
     left:46.5%;
+}
+#language-symbol{
+    position: absolute;
+    left:15%;
+}
+.stat-box-stats{
+    position:absolute;
+    top:200px;
+}
+.stat-box-stats p{
+    position:relative;
+    top:-30px;
+}
+.glitch-box-imgs{
+    width:150px;
+}
+#glitch-img{
+    position: absolute;
+    left:2%;
+}
+#rotation-img{
+    position: absolute;
+    left:33.5%;
+}
+#realities-img{
+    position: absolute;
+    left:68.5%;
+}
+#glitch-txt{
+    position:absolute;
+    left:15%;
+    top:200px;
+}
+#rotation-txt{
+    position:absolute;
+    left:47%;
+    top:200px;
+}
+#realities-txt{
+    position:absolute;
+    left:80%;
+    top:200px;
 }
