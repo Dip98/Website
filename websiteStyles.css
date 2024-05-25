@@ -96,7 +96,7 @@ a{
 }
 .stat-box-stats{
     position:absolute;
-    top:200px;
+    
 }
 .stat-box-stats p{
     position:relative;
@@ -144,7 +144,6 @@ a{
 /* My Story Box Setup */
 
 #my-story{
-    top:200px;
     height:320px;
 }
 
