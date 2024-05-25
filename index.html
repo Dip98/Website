@@ -10,9 +10,24 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="websiteStyles.css" type="text/css">
-        <script src = 'javascript.js'></script>
     </head>
     <body>
+        <div id = "sdnv" class = "sidenav">
+        <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+        <br>
+        <a onclick = "closeNav()" href = "javascript: changePage(0);">Home</a>
+        <br>
+        <a onclick ="closeNav()" href = "javascript: changePage(1);">About</a>
+        <br>
+        <a onclick = "closeNav()" href = "javascript: changePage(2);">Games</a>
+        <br>
+        <a onclick = "closeNav()" href = "javascript: changePage(3);">Tutorials</a>
+        <br>
+        <a onclick = "closeNav()" href = "javascript: changePage(4);">News</a>
+        <br>
+        <a onclick = "closeNav()" href = "javascript: changePage(5);">Support</a>
+        </div>
+        <span id = 'menu-btn' onclick = "openNav()">&#9776;</span>
         <div class = 'page'>
         <br>
         <br>
@@ -38,7 +53,7 @@
                 <p>Years</p>
             </div>
         </div>
-        <div id= 'glitch-box' class = 'info-box'>
+        <div id = 'glitch-box' class = 'info-box'>
             <h1>Glitch Trilogy</h1>
             <p>Three fun platformers. Each with their own twist. Play them all on <a href = 'https://www.khanacademy.org/profile/kaid_3886238215093093067654746'>Khan Acadmey</a></p>
             <img src = "https://www.khanacademy.org/computer-programming/glitch-game/4773928902115328/latest.png" class = 'glitch-box-imgs' id = 'glitch-img'>
@@ -54,6 +69,27 @@
                 The final game in the trilogy,<br>where you play as two players<br>on different maps with the same controls.
             </p>
         </div>
+        <div id = 'news-box' class = 'info-box'>
+            <h1>The Latest News!</h1>
+            <h2>I am now on GitHub!</h2>
+            <h3>After two years of Khan Academy, I have now moved to another platform! I tried out GitHub about six months ago, but I couldn't figure out how to use it properly. Now six months later, I have a little more knowledge about how GitHub works, and I was able to figure out the bascis. I have yet to release my first full game on GitHub, but one is in the works right now!</h3>
+            <img id = 'github-logo' src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1920px-GitHub_Invertocat_Logo.svg.png'>
+        </div>
+        </div>
+        <div class = 'page'>
+            <h1 id = 'title'>About</h1>
+            <h1>My Coding Story</h1>
+            <div id = 'my-story' class = 'info-box'>
+                <h1>How it Began</h1>
+                <h3 id = 'began-txt'>The story starts when I was eleven years old. At the time I was using Khan Academy for math, and had never even heard of coding before. Then one day, after I had finished my math for the day, I stumbled upon a course on Khan Academy called 'Computer Programming'. My curiosity made me click on the link, and I watched the first two videos of the 'Intro to JS: Drawing and Animation'. From there I powered through about half of the course, before I hit a roadblock on the for loop video. It was also around this time that I discovered a game that someone had made. At the time, I hadn't thought that making a game was even possible on Khan Academy. Looking back, the game was pretty simple, and definitely not the greatest. However, I owe a lot to that game's maker for motavating me. :) You can find the game <a href = 'https://www.khanacademy.org/computer-programming/space-dodge-a-game/5237611677417472'>here</a>.</h3>
+                <img id = 'ka-logo2' src = 'https://imgs.search.brave.com/u35yH9tLfWhkfF3tBVKInUT4jtHCpThLodhalJfzYBU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0sva2hhbi1h/Y2FkZW15LWxvZ28t/RUZBNDNCODZFMC1z/ZWVrbG9nby5jb20u/cG5n'>
+            </div>
+        </div>
+        <div id = 'footer' class = 'info-box'>
+            <h4>This webpage was made by ▪︎Dipper98▪︎. Last updated 5/24/24</h4>
+            <img id = 'github-logo2' src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/1920px-GitHub_Invertocat_Logo.svg.png'>
+            <img id = 'ka-logo' src = 'https://imgs.search.brave.com/u35yH9tLfWhkfF3tBVKInUT4jtHCpThLodhalJfzYBU/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0sva2hhbi1h/Y2FkZW15LWxvZ28t/RUZBNDNCODZFMC1z/ZWVrbG9nby5jb20u/cG5n'>
         </div>
     </body>
+    <script src = 'javascript.js'></script>
 </html>
