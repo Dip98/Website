@@ -144,6 +144,7 @@ a{
 /* My Story Box Setup */
 
 #my-story{
+    top:200px;
     height:320px;
 }
 
