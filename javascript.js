@@ -1,3 +1,10 @@
+function openNav() {
+    document.getElementById("sdnv").style.width = "20%";
+}
+function closeNav() {
+    document.getElementById("sdnv").style.width = "0%";
+}
+
 var pages = document.getElementsByClassName("page");
 var changePage = function(index){
     for (let i = 0;i < pages.length;i++){
