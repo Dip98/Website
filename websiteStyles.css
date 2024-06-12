@@ -138,18 +138,6 @@ a{
     width:75px;
 }
 
-/* My Story Box Setup */
-
-#my-story{
-    height:320px;
-}
-#my-story2{
-    height: 300px;
-}
-#my-story3{
-    height:340px;
-}
-
 /* My Story Box extras */
 
 #ka-logo2{
@@ -176,19 +164,32 @@ a{
     top:170px;
     left:110px;
 }
+#github-logo3{
+    width:170px;
+    position: absolute;
+    top:90px;
+    right:90px;
+}
 #began-txt{
-    position:absolute;
+    position:relative;
     left:20%;
     width:70%;
 }
 #games-txt{
-    position: absolute;
+    position: relative;
     width:70%;
+    left:5%;
 }
 #boom-txt{
-    position:absolute;
+    position: relative;
     left:20%;
+    top: -1%;
     width:70%;
+}
+#moving-txt{
+    position: relative;
+    width:70%;
+    left: 5%;
 }
 
 /* Sidenav */
