@@ -71,12 +71,6 @@ a{
     font-size:50px;
 }
 
-/* News Box Setup */
-
-#news-box{
-    height:320px;
-}
-
 /* Stat box extra*/
 
 #year-symbol{
@@ -131,11 +125,6 @@ a{
     position:absolute;
     left:80%;
     top:200px;
-}
-
-/* News Box extras */
-#github-logo{
-    width:75px;
 }
 
 /* My Story Box extras */
@@ -252,7 +241,7 @@ a{
     left:10%;
 }
 
-/* Search bar Stuff */
+/* Program Search bar Stuff */
 #search-bar{
     background-position: 10px 12px;
     background-repeat: no-repeat;
