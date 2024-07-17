@@ -5,7 +5,6 @@ function closeNav() {
     document.getElementById("sdnv").style.width = "0%";
 }
 var pages = document.getElementsByClassName("page");
-var ftr = document.getElementById("footer")
 function changePage(index){
     for (let i = 0;i < pages.length;i++){
         pages[i].style.display = "none";
