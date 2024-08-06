@@ -317,7 +317,11 @@ a{
 #shader-list li a:hover:not(.header) {
   background-color: rgb(240, 240, 240);
 }
-
+.shader-img{
+    position: absolute;
+    right:10px;
+    width:50px;
+}
 
 
 /* Article Search Bar */
@@ -365,7 +369,10 @@ a{
     margin: 10px;
     padding: 2.5px;
     position: relative;
-    left:30%;
-    width: 40%;
+    left:25%;
+    width: 50%;
 }
-
+.article a{
+    text-decoration: underline;
+    color: black;
+}
