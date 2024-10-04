@@ -1,68 +1,378 @@
-function openNav() {
-    document.getElementById("sdnv").style.width = "20%";
+/* Basic  Setup */
+html{
+    scroll-behavior: smooth;
 }
-function closeNav() {
-    document.getElementById("sdnv").style.width = "0%";
+body{
+	background-image: linear-gradient(to right, rgb(1, 147, 230), rgb(0, 209, 84), rgb(1, 147, 230));
+	font-family: 'Montserrat';
+	color:white;
+	text-align: center;
 }
-var pages = document.getElementsByClassName("page");
-function changePage(index){
-    for (let i = 0;i < pages.length;i++){
-        pages[i].style.display = "none";
-    }
-    pages[index].style.display = "block";
-    window.scrollTo({
-		top: 0,
-		behavior: "smooth"
-	});
-}
-changePage(0);
-
-function searchPrograms() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("search-bar");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("program-list");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-function searchShaders() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("shade-search-bar");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("shader-list");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-function searchArticles() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("art-search-bar");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("article-list");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
+a{
+    text-decoration: none;
 }
 
+/* Home Page Stuff */
+
+#title{
+	font-size:110px;
+}
+#explore-btn{
+    background-color:rgba(255, 255, 255, 0.7);
+    color:black;
+    font-size:50px;
+    display:block;
+    position:absolute;
+    left:48%;
+    top:70%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    transition:0.5s;
+}
+#explore-btn:hover{
+	color:rgb(1, 147, 230);
+}
+
+/* Info Box Setup */
+
+.info-box{
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    color: black;
+    position:relative;
+    padding: 5px;
+    margin: 5px;
+    width:90%;
+    height:300px;
+    left:5%;
+}
+.info-box a{
+    color:black;
+    text-decoration: underline;
+}
+
+/* Stat Box Setup */
+
+#stat-box{
+    height:320px;
+}
+#stat-box h1{
+    font-size:50px;
+}
+
+/* Glitch Box Setup */
+
+#glitch-box{
+    height:320px;
+}
+#glitch-box h1{
+    position:relative;
+    font-size:50px;
+}
+
+/* Stat box extra*/
+
+#year-symbol{
+    position: absolute;
+    left:81.5%;
+}
+#game-symbol{
+    position: absolute;
+    left:46.5%;
+}
+#language-symbol{
+    position: absolute;
+    left:15%;
+}
+.stat-box-stats{
+    position:absolute;
+    top:200px;
+}
+.stat-box-stats p{
+    position:relative;
+    top:-30px;
+}
+
+/* Glitch box extra*/
+
+.glitch-box-imgs{
+    width:150px;
+}
+#glitch-img{
+    position: absolute;
+    left:2%;
+}
+#rotation-img{
+    position: absolute;
+    left:33.5%;
+}
+#realities-img{
+    position: absolute;
+    left:68.5%;
+}
+#glitch-txt{
+    position:absolute;
+    left:15%;
+    top:200px;
+}
+#rotation-txt{
+    position:absolute;
+    left:47%;
+    top:200px;
+}
+#realities-txt{
+    position:absolute;
+    left:80%;
+    top:200px;
+}
+
+/* My Story Box extras */
+
+#ka-logo2{
+    width:150px;
+    position:absolute;
+    top:90px;
+    left:50px;
+}
+#conversation-img{
+    width:170px;
+    position: absolute;
+    top:90px;
+    right:90px;
+}
+#glitch-img2{
+    width:110px;
+    position:absolute;
+    top:90px;
+    left:50px;
+}
+#infiltration-img{
+    width:110px;
+    position:absolute;
+    top:170px;
+    left:110px;
+}
+#github-logo3{
+    width:170px;
+    position: absolute;
+    top:90px;
+    right:90px;
+}
+#began-txt{
+    position:relative;
+    left:20%;
+    width:70%;
+}
+#games-txt{
+    position: relative;
+    width:70%;
+    left:5%;
+}
+#boom-txt{
+    position: relative;
+    left:20%;
+    top: -1%;
+    width:70%;
+}
+#moving-txt{
+    position: relative;
+    width:70%;
+    left: 5%;
+}
+
+/* Sidenav */
+
+.sidenav {
+    height: 100%;
+    width:0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color:rgb(1, 147, 230);
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#menu-btn{
+    position:fixed; 
+    left:1%;
+    top:0%;
+    font-size:40px; 
+    cursor:pointer; 
+    color:black;
+}
+
+/* Footer Box Setup */
+#footer{
+    position: absolute;
+    height:50px;
+}
+#github-logo2{
+    width:35px;
+    position:absolute;
+    top:10px;
+    left:90%;
+}
+#ka-logo{
+    width:35px;
+    position: absolute;
+    top:10px;
+    left:10%;
+}
+
+/* Program Search bar Stuff */
+#search-bar{
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px 12px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+#program-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#program-list li a{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(220, 220, 220);
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    color: black;
+    border-radius: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+}
+#program-list li a:hover:not(.header) {
+  background-color: rgb(240, 240, 240);
+}
+.program-img{
+    position: absolute;
+    right:10px;
+    width:50px;
+}
+
+/* Shader Search Bar */
+#shade-search-bar{
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px 12px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+#shader-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#shader-list li a{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(220, 220, 220);
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    color: black;
+    border-radius: 20px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+}
+#shader-list li a:hover:not(.header) {
+  background-color: rgb(240, 240, 240);
+}
+.shader-img{
+    position: absolute;
+    right:10px;
+    width:50px;
+}
+
+
+/* Article Search Bar */
+#art-search-bar{
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 30%;
+    font-size: 16px;
+    padding: 12px 20px 12px 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+#article-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#article-list li a{
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    margin: 10px;
+    padding: 12px;
+    background-color: rgb(220, 220, 220);
+    position: relative;
+    left: 30%;
+    width: 40%;
+    height: 50px;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    display: block;
+}
+#article-list li a:hover:not(.header) {
+  background-color: rgb(240, 240, 240);
+}
+
+/* Article Stuff */
+.article{
+    background-color: rgb(220, 220, 220);
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    padding: 2.5px;
+    position: relative;
+    left:25%;
+    width: 50%;
+}
+.article a{
+    text-decoration: underline;
+    color: black;
+}
