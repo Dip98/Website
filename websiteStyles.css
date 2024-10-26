@@ -3,7 +3,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-	background-image: linear-gradient(to right, rgb(1, 147, 230), rgb(0, 209, 84), rgb(1, 147, 230));
+	background-image: url("https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1200");
 	font-family: 'Montserrat';
 	color:white;
 	text-align: center;
@@ -220,7 +220,7 @@ a{
     top:0%;
     font-size:40px; 
     cursor:pointer; 
-    color:black;
+    color:white;
 }
 
 /* Footer Box Setup */
